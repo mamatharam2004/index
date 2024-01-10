@@ -1,0 +1,26 @@
+function Dijkstra_Algorithm(Graph, source_node)  
+    
+    for each node N in Graph:  
+        distance[N] = INFINITY  
+        previous[N] = NULL  
+        If N != source_node, add N to Priority Queue G  
+   
+    distance[source_node] = 0  
+  
+    
+    while G is NOT empty:  
+
+        Q = node in G with the least distance[]  
+        mark Q visited  
+          
+       
+        for each unvisited neighbor node N of Q:  
+            temporary_distance = distance[Q] + distance_between(Q, N)  
+  
+           
+            if temporary_distance < distance[N]  
+                distance[N] := temporary_distance  
+                previous[N] := Q   
+  
+   
+    return distance[], previous[]  
